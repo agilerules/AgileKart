@@ -96,7 +96,7 @@
 										<td rowspan="4" colspan="3" id="cart_voucher"
 											class="cart_voucher"></td>
 										<td colspan="3" class="text-right">Total products</td>
-										<td colspan="2" class="price" id="total_product">$26.00</td>
+										<td colspan="2" class="price" id="total_product">{{item.prodPrice}}</td>
 									</tr>
 									<tr class="cart_total_delivery">
 										<td colspan="3" class="text-right">Total shipping</td>
@@ -117,7 +117,7 @@
 										class="cart_item last_item first_item address_0 odd">
 										<td class="cart_product"><a
 											href="#"><img
-												src="item.prodImgUrl"
+												src="{{item.prodImgUrl}}"
 												alt="Printed Dress" width="98" height="98" /></a></td>
 										<td class="cart_description">
 											<p class="product-name">
@@ -159,7 +159,7 @@
 											</div>
 										</td>
 										<td class="cart_total" data-title="Total"><span
-											class="price" id="total_product_price_3_13_0"> $26.00
+											class="price" id="total_product_price_3_13_0"> {{item.prodPrice}}
 										</span></td>
 
 									</tr>
