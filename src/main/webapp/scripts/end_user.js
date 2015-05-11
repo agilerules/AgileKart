@@ -21,9 +21,9 @@ agileKart.config(function($routeProvider) {
 			}).when('/summary/address', {
 				controller : 'productCtrl',
 				templateUrl : 'views/end_user/address.html'
-			}).when('/summary/shopping', {
+			}).when('/summary/shipping', {
 				controller : 'productCtrl',
-				templateUrl : 'views/end_user/shopping.html'
+				templateUrl : 'views/end_user/shipping.html'
 			}).when('/summary/payment', {
 				controller : 'productCtrl',
 				templateUrl : 'views/end_user/payment.html'
