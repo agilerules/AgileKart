@@ -213,49 +213,17 @@
 					<!-- end primary_block -->
 					<!-- Suggestions -->
 					<section class="page-product-box">
-						<h3 class="page-product-heading">Customers who bought this
+						<h3 class="page-product-heading" ng-hide="productsCrossList.length==0">Customers who bought this
 							item also bought:</h3>
 						<table>
 							<tr>
-								<div class="content_price" ng-switch
-									on="(product().productId == 1) ||(product().productId == 3) ||(product().productId == 8) ">
-									<div ng-switch-when="true">
-										<a href="#"><img
-											src="img/2-home_default/Watchworld_Mens_Classic.jpg"></img></a> <a
-											href="#"><img
-											src="img/2-home_default/Watchworld_Mens_Classic_3.jpg"></img></a>
-									</div>
-								</div>
-								<div class="content_price" ng-switch
-									on="(product().productId == 2) ||(product().productId == 7)  ">
-									<div ng-switch-when="true">
-										<a href="#"><img
-											src="img/2-home_default/Watchworld_womens_Classic.jpg"></img></a>
-										<a href="#"><img
-											src="img/2-home_default/Womens_Kalitron_sport.jpg"></img></a> <a
-											href="#"><img
-											src="img/2-home_default/Watchworld_womens_Classic_2.jpg"></img></a>
-
-									</div>
-								</div>
-								<div class="content_price" ng-switch
-									on="(product().productId == 5) ||(product().productId == 6) ||(product().productId == 10) ">
-									<div ng-switch-when="true">
-										<a href="#"><img
-											src="img/1-home_default/APK_Spring Tee.jpg"></img></a> <a
-											href="#"><img
-											src="img/1-home_default/APK_Spring Tee_2.jpg"></img></a>
-									</div>
-								</div>
-								<div class="content_price" ng-switch
-									on="(product().productId == 4) ||(product().productId == 9)  ">
-									<div ng-switch-when="true">
-										<a href="#"><img
-											src="img/1-home_default/Light_Cotton_TShirt.jpg"></img></a> <a
-											href="#"><img src="img/1-home_default/Jakes_polo.jpg"></img></a>
-										<a href="#"><img
-											src="img/1-home_default/Light_Cotton_TShirt_3.jpg"></img></a>
-
+								<div class="content_price" >
+								
+									<div >
+									<span ng-repeat="product in productsCrossList">
+										<a href="#/product/{{product.akProductCategories.categoryName}}/{{product.productId}}" ><img
+											src="{{product.productThumb}}"></img></a> 
+										</span>	
 									</div>
 								</div>
 							</tr>
