@@ -179,13 +179,13 @@ var wishlistProductsIds = false;
 </head>
 <body id="order"
 	class="order hide-left-column hide-right-column lang_en">
-	
+
 	<div class="columns-container">
 		<div id="columns" class="container">
 
 			<!-- Breadcrumb -->
 			<div class="breadcrumb clearfix">
-				<a class="home" href="index.html" title="Return to Home"><i
+				<a class="home" href="#" title="Return to Home"><i
 					class="icon-home"></i></a> <span class="navigation-pipe">&gt;</span>
 				Addresses
 			</div>
@@ -203,11 +203,11 @@ var wishlistProductsIds = false;
 
 					<!-- Steps -->
 					<ul class="step clearfix" id="order_step">
-						<li class="step_done first"><a href="summary.html"> <em>01.</em>
+						<li class="step_done first"><a href="#/summary"> <em>01.</em>
 								Summary
 						</a></li>
 						<li class="step_done step_done_last second"><a
-							href="sign.html"> <em>02.</em> Sign in
+							href="#/summary/login"> <em>02.</em> Sign in
 						</a></li>
 						<li class="step_current third"><span><em>03.</em>
 								Address</span></li>
@@ -220,7 +220,7 @@ var wishlistProductsIds = false;
 
 
 
-					<form action="http://fo.demo.prestashop.com/en/order" method="post">
+					<form action="" method="post">
 						<div class="addresses clearfix">
 							<div class="row">
 								<div class="col-xs-12 col-sm-6">
@@ -242,21 +242,18 @@ var wishlistProductsIds = false;
 									<div class="checker" id="uniform-addressesAreEquals">
 										<span class="checked"><input type="checkbox"
 											name="same" id="addressesAreEquals" value="1"
-											checked="checked"><label for="addressesAreEquals">Use the delivery
-										address as the billing address.</label></span>
-											
+											checked="checked"> </span>
 									</div>
-									
+									<label for="addressesAreEquals">Use the delivery
+										address as the billing address.</label>
 									</p>
 								</div>
 								<div class="col-xs-12 col-sm-6">
 									<div id="address_invoice_form"
 										class="select form-group selector1" style="display: none;">
-										<a
-											href="http://fo.demo.prestashop.com/en/address?back=order.php%3Fstep%3D1&select_address=1"
-											title="Add" class="button button-small btn btn-default">
-											<span> Add a new address <i
-												class="icon-chevron-right right"></i>
+										<a href="" title="Add"
+											class="button button-small btn btn-default"> <span>
+												Add a new address <i class="icon-chevron-right right"></i>
 										</span>
 										</a>
 									</div>
@@ -268,14 +265,16 @@ var wishlistProductsIds = false;
 									<ul class="address item box" id="address_delivery">
 										<li class="address_title"><h3 class="page-subheading">Your
 												delivery address</h3></li>
-										<li class="address_firstname address_lastname">Mark Manton</li>
-										<li class="address_address1 address_address2">Apt #10J Morgan Manor</li>
-										<li class="address_city address_state_name address_postcode">New York, NY 10010</li>
+										<li class="address_firstname address_lastname">Mark
+											Manton</li>
+										<li class="address_address1 address_address2">Apt #10J
+											Morgan Manor</li>
+										<li class="address_city address_state_name address_postcode">New
+											York, NY 10010</li>
 										<li class="address_country_name">United States</li>
 										<li class="address_phone">+1 203 548 1653</li>
 										<li class="address_update"><a
-											class="button button-small btn btn-default"
-											href="http://fo.demo.prestashop.com/en/address?back=order.php%3Fstep%3D1&id_address=609"
+											class="button button-small btn btn-default" href="#/summary/address"
 											title="Update"><span>Update<i
 													class="icon-chevron-right right"></i></span></a></li>
 									</ul>
@@ -284,14 +283,16 @@ var wishlistProductsIds = false;
 									<ul class="address alternate_item box" id="address_invoice">
 										<li class="address_title"><h3 class="page-subheading">Your
 												billing address</h3></li>
-										<li class="address_firstname address_lastname">Mark Manton</li>
-										<li class="address_address1 address_address2">Apt #10J Morgan Manor</li>
-										<li class="address_city address_state_name address_postcode">New York, NY 10010</li>
+										<li class="address_firstname address_lastname">Mark
+											Manton</li>
+										<li class="address_address1 address_address2">Apt #10J
+											Morgan Manor</li>
+										<li class="address_city address_state_name address_postcode">New
+											York, NY 10010</li>
 										<li class="address_country_name">United States</li>
 										<li class="address_phone">+1 203 548 1653</li>
 										<li class="address_update"><a
-											class="button button-small btn btn-default"
-											href=""
+											class="button button-small btn btn-default" href="#/summary/address"
 											title="Update"><span>Update<i
 													class="icon-chevron-right right"></i></span></a></li>
 									</ul>
@@ -299,9 +300,8 @@ var wishlistProductsIds = false;
 							</div>
 							<!-- end row -->
 							<p class="address_add submit">
-								<a
-									href=""
-									title="Add" class="button button-small btn btn-default"> <span>Add
+								<a href="#/summary/address" title="Add"
+									class="button button-small btn btn-default"> <span>Add
 										a new address<i class="icon-chevron-right right"></i>
 								</span>
 								</a>
@@ -315,11 +315,10 @@ var wishlistProductsIds = false;
 						<!-- end addresses -->
 						<p class="cart_navigation clearfix">
 							<input type="hidden" class="hidden" name="step" value="2">
-							<input type="hidden" name="back" value=""> <a
-								href="sign.html" title="Previous"
-								class="button-exclusive btn btn-default"> <i
+							<input type="hidden" name="back" value=""> <a href="#"
+								title="Previous" class="button-exclusive btn btn-default"> <i
 								class="icon-chevron-left"></i> Continue Shopping
-							</a> <a href="/summary/shopping"
+							</a> <a href="#/summary/shipping"
 								class="button btn btn-default standard-checkout button-medium"
 								title="Proceed to checkout"> <span>Proceed to
 									checkout</span>
