@@ -5,45 +5,103 @@
 <!--[if IE 8]><html class="no-js lt-ie9 ie8" lang="en-us"><![endif]-->
 <!--[if gt IE 8]> <html class="no-js ie9" lang="en-us"><![endif]-->
 <html lang="en-us">
-	<head>
-		<meta charset="utf-8">
-		<title>Order - PrestaShop</title>
-		<meta name="generator" content="PrestaShop">
-		<meta name="robots" content="index,follow">
-		<meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0">
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<link rel="icon" type="image/vnd.microsoft.icon" href="img/favicon.ico?1324977642">
-		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico?1324977642">
-			<link rel="stylesheet" href="themes/default-bootstrap/css/global.css" type="text/css" media="all">
-			<link rel="stylesheet" href="themes/default-bootstrap/css/autoload/highdpi.css" type="text/css" media="all">
-			<link rel="stylesheet" href="themes/default-bootstrap/css/autoload/responsive-tables.css" type="text/css" media="all">
-			<link rel="stylesheet" href="themes/default-bootstrap/css/autoload/uniform.default.css" type="text/css" media="all">
-			<link rel="stylesheet" href="js/jquery/plugins/fancybox/jquery.fancybox.css" type="text/css" media="all">
-			<link rel="stylesheet" href="themes/default-bootstrap/css/addresses.css" type="text/css" media="all">
-			<link rel="stylesheet" href="themes/default-bootstrap/css/modules/blockbanner/blockbanner.css" type="text/css" media="all">
-			<link rel="stylesheet" href="themes/default-bootstrap/css/modules/blockbestsellers/blockbestsellers.css" type="text/css" media="all">
-			<link rel="stylesheet" href="themes/default-bootstrap/css/modules/blockcart/blockcart.css" type="text/css" media="all">
-			<link rel="stylesheet" href="js/jquery/plugins/bxslider/jquery.bxslider.css" type="text/css" media="all">
-			<link rel="stylesheet" href="themes/default-bootstrap/css/modules/blockcategories/blockcategories.css" type="text/css" media="all">
-			<link rel="stylesheet" href="themes/default-bootstrap/css/modules/blockcurrencies/blockcurrencies.css" type="text/css" media="all">
-			<link rel="stylesheet" href="themes/default-bootstrap/css/modules/blocklanguages/blocklanguages.css" type="text/css" media="all">
-			<link rel="stylesheet" href="themes/default-bootstrap/css/modules/blockcontact/blockcontact.css" type="text/css" media="all">
-			<link rel="stylesheet" href="themes/default-bootstrap/css/modules/blockmyaccountfooter/blockmyaccount.css" type="text/css" media="all">
-			<link rel="stylesheet" href="themes/default-bootstrap/css/modules/blocknewproducts/blocknewproducts.css" type="text/css" media="all">
-			<link rel="stylesheet" href="themes/default-bootstrap/css/modules/blocknewsletter/blocknewsletter.css" type="text/css" media="all">
-			<link rel="stylesheet" href="themes/default-bootstrap/css/modules/blocksearch/blocksearch.css" type="text/css" media="all">
-			<link rel="stylesheet" href="js/jquery/plugins/autocomplete/jquery.autocomplete.css" type="text/css" media="all">
-			<link rel="stylesheet" href="themes/default-bootstrap/css/modules/blockspecials/blockspecials.css" type="text/css" media="all">
-			<link rel="stylesheet" href="themes/default-bootstrap/css/modules/blocktags/blocktags.css" type="text/css" media="all">
-			<link rel="stylesheet" href="themes/default-bootstrap/css/modules/blocktopmenu/css/blocktopmenu.css" type="text/css" media="all">
-			<link rel="stylesheet" href="themes/default-bootstrap/css/modules/blocktopmenu/css/superfish-modified.css" type="text/css" media="all">
-			<link rel="stylesheet" href="themes/default-bootstrap/css/modules/blockuserinfo/blockuserinfo.css" type="text/css" media="all">
-			<link rel="stylesheet" href="themes/default-bootstrap/css/modules/blockviewed/blockviewed.css" type="text/css" media="all">
-			<link rel="stylesheet" href="themes/default-bootstrap/css/modules/homefeatured/homefeatured.css" type="text/css" media="all">
-			<link rel="stylesheet" href="modules/themeconfigurator/css/hooks.css" type="text/css" media="all">
-			<link rel="stylesheet" href="themes/default-bootstrap/css/modules/blockwishlist/blockwishlist.css" type="text/css" media="all">
-			<link rel="stylesheet" href="themes/default-bootstrap/css/modules/productcomments/productcomments.css" type="text/css" media="all">
-		<script type="text/javascript">
+<head>
+<meta charset="utf-8">
+<title>Order - PrestaShop</title>
+<meta name="generator" content="PrestaShop">
+<meta name="robots" content="index,follow">
+<meta name="viewport"
+	content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="icon" type="image/vnd.microsoft.icon"
+	href="img/favicon.ico?1324977642">
+<link rel="shortcut icon" type="image/x-icon"
+	href="img/favicon.ico?1324977642">
+<link rel="stylesheet" href="themes/default-bootstrap/css/global.css"
+	type="text/css" media="all">
+<link rel="stylesheet"
+	href="themes/default-bootstrap/css/autoload/highdpi.css"
+	type="text/css" media="all">
+<link rel="stylesheet"
+	href="themes/default-bootstrap/css/autoload/responsive-tables.css"
+	type="text/css" media="all">
+<link rel="stylesheet"
+	href="themes/default-bootstrap/css/autoload/uniform.default.css"
+	type="text/css" media="all">
+<link rel="stylesheet"
+	href="js/jquery/plugins/fancybox/jquery.fancybox.css" type="text/css"
+	media="all">
+<link rel="stylesheet" href="themes/default-bootstrap/css/addresses.css"
+	type="text/css" media="all">
+<link rel="stylesheet"
+	href="themes/default-bootstrap/css/modules/blockbanner/blockbanner.css"
+	type="text/css" media="all">
+<link rel="stylesheet"
+	href="themes/default-bootstrap/css/modules/blockbestsellers/blockbestsellers.css"
+	type="text/css" media="all">
+<link rel="stylesheet"
+	href="themes/default-bootstrap/css/modules/blockcart/blockcart.css"
+	type="text/css" media="all">
+<link rel="stylesheet"
+	href="js/jquery/plugins/bxslider/jquery.bxslider.css" type="text/css"
+	media="all">
+<link rel="stylesheet"
+	href="themes/default-bootstrap/css/modules/blockcategories/blockcategories.css"
+	type="text/css" media="all">
+<link rel="stylesheet"
+	href="themes/default-bootstrap/css/modules/blockcurrencies/blockcurrencies.css"
+	type="text/css" media="all">
+<link rel="stylesheet"
+	href="themes/default-bootstrap/css/modules/blocklanguages/blocklanguages.css"
+	type="text/css" media="all">
+<link rel="stylesheet"
+	href="themes/default-bootstrap/css/modules/blockcontact/blockcontact.css"
+	type="text/css" media="all">
+<link rel="stylesheet"
+	href="themes/default-bootstrap/css/modules/blockmyaccountfooter/blockmyaccount.css"
+	type="text/css" media="all">
+<link rel="stylesheet"
+	href="themes/default-bootstrap/css/modules/blocknewproducts/blocknewproducts.css"
+	type="text/css" media="all">
+<link rel="stylesheet"
+	href="themes/default-bootstrap/css/modules/blocknewsletter/blocknewsletter.css"
+	type="text/css" media="all">
+<link rel="stylesheet"
+	href="themes/default-bootstrap/css/modules/blocksearch/blocksearch.css"
+	type="text/css" media="all">
+<link rel="stylesheet"
+	href="js/jquery/plugins/autocomplete/jquery.autocomplete.css"
+	type="text/css" media="all">
+<link rel="stylesheet"
+	href="themes/default-bootstrap/css/modules/blockspecials/blockspecials.css"
+	type="text/css" media="all">
+<link rel="stylesheet"
+	href="themes/default-bootstrap/css/modules/blocktags/blocktags.css"
+	type="text/css" media="all">
+<link rel="stylesheet"
+	href="themes/default-bootstrap/css/modules/blocktopmenu/css/blocktopmenu.css"
+	type="text/css" media="all">
+<link rel="stylesheet"
+	href="themes/default-bootstrap/css/modules/blocktopmenu/css/superfish-modified.css"
+	type="text/css" media="all">
+<link rel="stylesheet"
+	href="themes/default-bootstrap/css/modules/blockuserinfo/blockuserinfo.css"
+	type="text/css" media="all">
+<link rel="stylesheet"
+	href="themes/default-bootstrap/css/modules/blockviewed/blockviewed.css"
+	type="text/css" media="all">
+<link rel="stylesheet"
+	href="themes/default-bootstrap/css/modules/homefeatured/homefeatured.css"
+	type="text/css" media="all">
+<link rel="stylesheet" href="modules/themeconfigurator/css/hooks.css"
+	type="text/css" media="all">
+<link rel="stylesheet"
+	href="themes/default-bootstrap/css/modules/blockwishlist/blockwishlist.css"
+	type="text/css" media="all">
+<link rel="stylesheet"
+	href="themes/default-bootstrap/css/modules/productcomments/productcomments.css"
+	type="text/css" media="all">
+<script type="text/javascript">
 var CUSTOMIZE_TEXTFIELD = 1;
 var FancyboxI18nClose = 'Close';
 var FancyboxI18nNext = 'Next';
@@ -91,479 +149,233 @@ var usingSecureMode = false;
 var wishlistProductsIds = false;
 </script>
 
-		<script type="text/javascript" src="js/jquery/jquery-1.11.0.min.js"></script>
-		<script type="text/javascript" src="js/jquery/jquery-migrate-1.2.1.min.js"></script>
-		<script type="text/javascript" src="js/jquery/plugins/jquery.easing.js"></script>
-		<script type="text/javascript" src="js/tools.js"></script>
-		<script type="text/javascript" src="themes/default-bootstrap/js/global.js"></script>
-		<script type="text/javascript" src="themes/default-bootstrap/js/autoload/10-bootstrap.min.js"></script>
-		<script type="text/javascript" src="themes/default-bootstrap/js/autoload/15-jquery.total-storage.min.js"></script>
-		<script type="text/javascript" src="themes/default-bootstrap/js/autoload/15-jquery.uniform-modified.js"></script>
-		<script type="text/javascript" src="js/jquery/plugins/fancybox/jquery.fancybox.js"></script>
-		<script type="text/javascript" src="themes/default-bootstrap/js/products-comparison.js"></script>
-		<script type="text/javascript" src="js/jquery/plugins/jquery.typewatch.js"></script>
-		<script type="text/javascript" src="themes/default-bootstrap/js/cart-summary.js"></script>
-		<script type="text/javascript" src="themes/default-bootstrap/js/modules/blockcart/ajax-cart.js"></script>
-		<script type="text/javascript" src="js/jquery/plugins/jquery.scrollTo.js"></script>
-		<script type="text/javascript" src="js/jquery/plugins/jquery.serialScroll.js"></script>
-		<script type="text/javascript" src="js/jquery/plugins/bxslider/jquery.bxslider.js"></script>
-		<script type="text/javascript" src="themes/default-bootstrap/js/tools/treeManagement.js"></script>
-		<script type="text/javascript" src="themes/default-bootstrap/js/modules/blocknewsletter/blocknewsletter.js"></script>
-		<script type="text/javascript" src="js/jquery/plugins/autocomplete/jquery.autocomplete.js"></script>
+<script type="text/javascript" src="js/jquery/jquery-1.11.0.min.js"></script>
+<script type="text/javascript"
+	src="js/jquery/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="js/jquery/plugins/jquery.easing.js"></script>
+<script type="text/javascript" src="js/tools.js"></script>
+<script type="text/javascript"
+	src="themes/default-bootstrap/js/global.js"></script>
+<script type="text/javascript"
+	src="themes/default-bootstrap/js/autoload/10-bootstrap.min.js"></script>
+<script type="text/javascript"
+	src="themes/default-bootstrap/js/autoload/15-jquery.total-storage.min.js"></script>
+<script type="text/javascript"
+	src="themes/default-bootstrap/js/autoload/15-jquery.uniform-modified.js"></script>
+<script type="text/javascript"
+	src="js/jquery/plugins/fancybox/jquery.fancybox.js"></script>
+<script type="text/javascript"
+	src="themes/default-bootstrap/js/products-comparison.js"></script>
+<script type="text/javascript"
+	src="js/jquery/plugins/jquery.typewatch.js"></script>
+<script type="text/javascript"
+	src="themes/default-bootstrap/js/cart-summary.js"></script>
+<script type="text/javascript"
+	src="themes/default-bootstrap/js/modules/blockcart/ajax-cart.js"></script>
+<script type="text/javascript"
+	src="js/jquery/plugins/jquery.scrollTo.js"></script>
+<script type="text/javascript"
+	src="js/jquery/plugins/jquery.serialScroll.js"></script>
+<script type="text/javascript"
+	src="js/jquery/plugins/bxslider/jquery.bxslider.js"></script>
+<script type="text/javascript"
+	src="themes/default-bootstrap/js/tools/treeManagement.js"></script>
+<script type="text/javascript"
+	src="themes/default-bootstrap/js/modules/blocknewsletter/blocknewsletter.js"></script>
+<script type="text/javascript"
+	src="js/jquery/plugins/autocomplete/jquery.autocomplete.js"></script>
 
-		<script type="text/javascript" src="themes/default-bootstrap/js/modules/blocksearch/blocksearch.js"></script>
-		<script type="text/javascript" src="themes/default-bootstrap/js/modules/blocktopmenu/js/hoverIntent.js"></script>
-		<script type="text/javascript" src="themes/default-bootstrap/js/modules/blocktopmenu/js/superfish-modified.js"></script>
-		<script type="text/javascript" src="themes/default-bootstrap/js/modules/blocktopmenu/js/blocktopmenu.js"></script>
-		<script type="text/javascript" src="themes/default-bootstrap/js/modules/blockwishlist/js/ajax-wishlist.js"></script>
-			
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,600&amp;subset=latin,latin-ext" type="text/css" media="all">
-		<!--[if IE 8]>
+<script type="text/javascript"
+	src="themes/default-bootstrap/js/modules/blocksearch/blocksearch.js"></script>
+<script type="text/javascript"
+	src="themes/default-bootstrap/js/modules/blocktopmenu/js/hoverIntent.js"></script>
+<script type="text/javascript"
+	src="themes/default-bootstrap/js/modules/blocktopmenu/js/superfish-modified.js"></script>
+<script type="text/javascript"
+	src="themes/default-bootstrap/js/modules/blocktopmenu/js/blocktopmenu.js"></script>
+<script type="text/javascript"
+	src="themes/default-bootstrap/js/modules/blockwishlist/js/ajax-wishlist.js"></script>
+
+<link rel="stylesheet"
+	href="http://fonts.googleapis.com/css?family=Open+Sans:300,600&amp;subset=latin,latin-ext"
+	type="text/css" media="all">
+<!--[if IE 8]>
 		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
 		<![endif]-->
-	</head>
-	<body id="order" class="order hide-left-column hide-right-column lang_en">
-					<div id="page">
-			<div class="header-container">
-				<header id="header">
-					<div class="banner">
-						<div class="container">
-							<div class="row">
-								<a href="index.html" title="">
-	<img class="img-responsive" src="modules/blockbanner/img/sale70.png" alt="" title="" width="1170" height="65"></a> <img src="http://uk.yourchoicehosting.com/images/powered-by-redhat.gif" style="
-    width: 100px;
-    margin-top: -60px;
-    margin-left: 1069px;
-    height: 47px;
-">							</div>
+</head>
+<body id="order"
+	class="order hide-left-column hide-right-column lang_en">
+	<nav>
+		<!-- Block user information module NAV  -->
+		<!-- /Block usmodule NAV -->
+		<!-- Block languages module -->
 
-							</div>
-						</div>
-					</div>
-					<div class="nav">
-						<div class="container">
-							<div class="row">
-								<nav><!-- Block user information module NAV  -->
-<!-- /Block usmodule NAV -->
-<!-- Block languages module -->
-								
-	</div>
-<!-- /Block languages module -->
-	</div> <!-- #layer_cart -->
-	<div class="layer_cart_overlay"></div>
+		</div>
+		<!-- /Block languages module -->
+		</div>
+		<!-- #layer_cart -->
+		<div class="layer_cart_overlay"></div>
 
-<!-- /MODULE Block cart -->
-	<!-- Menu -->
-	<div id="block_top_menu" class="sf-contener clearfix col-lg-12">
-		<div class="cat-title">Categories</div>
-<ul class="sf-menu clearfix menu-content sf-js-enabled sf-arrows">
-			    <li class=""><a href="watches.html" title="Watches" class="">Watches</a></li>
-                <li><a href="tshirt.html" title="T-shirts">T-shirts</a></li>
-		</ul>	</div>
-	<!--/ Menu -->
-							</div>
-						</div>
-					</div>
-				</header>
-			</div>
+		<!-- /MODULE Block cart -->
 			<div class="columns-container">
-				<div id="columns" class="container">
-											
-<!-- Breadcrumb -->
-<div class="breadcrumb clearfix">
-	<a class="home" href="index.html" title="Return to Home"><i class="icon-home"></i></a>
-			<span class="navigation-pipe">&gt;</span>
+			<div id="columns" class="container">
+				<!-- Breadcrumb -->
+				<div class="breadcrumb clearfix">
+					<a class="home" href="#" title="Return to Home"><i
+						class="icon-home"></i></a> <span class="navigation-pipe">&gt;</span>
 					Your payment method
-			</div>
-<!-- /Breadcrumb -->
+				</div>
+				<!-- /Breadcrumb -->
 
-										<div id="slider_row" class="row">
-						<div id="top_column" class="center_column col-xs-12 col-sm-12"></div>
-					</div>
-					<div class="row">
-																		<div id="center_column" class="center_column col-xs-12 col-sm-12">
-		
-	
-	
-	
-	
-	
-		<h1 class="page-heading">Please choose your payment method
-					<span class="heading-counter">Your shopping cart contains:
-				<span id="summary_products_quantity">2 products</span>
-			</span>
-			</h1>
+				<div id="slider_row" class="row">
+					<div id="top_column" class="center_column col-xs-12 col-sm-12"></div>
+				</div>
+				<div class="row">
+					<div id="center_column" class="center_column col-xs-12 col-sm-12">
+						<h1 class="page-heading">
+							Please choose your payment method <span class="heading-counter">Your
+								shopping cart contains: <span id="summary_products_quantity">2
+									products</span>
+							</span>
+						</h1>
+						<!-- Steps -->
+						<ul class="step clearfix" id="order_step">
+							<li class="step_done first"><a
+								href="#/summary"> <em>01.</em>
+									Summary
+							</a></li>
+							<li class="step_done second"><a href="#/summary/login"> <em>02.</em>
+									Sign in
+							</a></li>
+							<li class="step_done third"><a href="#/summary/address"> <em>03.</em>
+									Address
+							</a></li>
+							<li class="step_done step_done_last four"><a
+								href="#/summary/shipping"> <em>04.</em> Shipping
+							</a></li>
+							<li id="step_end" class="step_current last"><span><em>05.</em>
+									Payment</span></li>
+						</ul>
+						<!-- /Steps -->
 
-		
-
-
-
-<!-- Steps -->
-<ul class="step clearfix" id="order_step">
-	<li class="step_done first">
-				<a href="http://fo.demo.prestashop.com/en/order">
-			<em>01.</em> Summary
-		</a>
-			</li>
-	<li class="step_done second">
-				<a href="sign.html">
-			<em>02.</em> Sign in
-		</a>
-			</li>
-	<li class="step_done third">
-				<a href="address.html">
-			<em>03.</em> Address
-		</a>
-			</li>
-	<li class="step_done step_done_last four">
-				<a href="shipping.html">
-			<em>04.</em> Shipping
-		</a>
-			</li>
-	<li id="step_end" class="step_current last">
-		<span><em>05.</em> Payment</span>
-	</li>
-</ul>
-<!-- /Steps -->
-
-	
-
-		<div class="paiement_block">
-			<div id="HOOK_TOP_PAYMENT"></div>
-															<div id="order-detail-content" class="table_block table-responsive">
-							<table id="cart_summary" class="table table-bordered">
-								<thead>
-									<tr>
-										<th class="cart_product first_item">Product</th>
-										<th class="cart_description item">Description</th>
-																					<th class="cart_availability item text-center">Availability</th>
-																				<th class="cart_unit item text-right">Unit price</th>
-										<th class="cart_quantity item text-center">Qty</th>
-										<th class="cart_total last_item text-right">Total</th>
-									</tr>
-								</thead>
-								<tfoot>
-																														<tr class="cart_total_price">
-												<td colspan="4" class="text-right">Total products</td>
-												<td colspan="2" class="price" id="total_product">$101.99</td>
-											</tr>
-																												<tr class="cart_total_voucher" style="display:none">
-										<td colspan="4" class="text-right">
-																																				Total gift wrapping cost:																																	</td>
-										<td colspan="2" class="price-discount price" id="total_wrapping">
-																																				$0.00
-																																	</td>
-									</tr>
-																														<tr class="cart_total_delivery">
-												<td colspan="4" class="text-right">Total shipping</td>
-												<td colspan="2" class="price" id="total_shipping" >$7.00</td>
-											</tr>
-																												<tr class="cart_total_voucher" style="display:none">
-										<td colspan="4" class="text-right">
-																																				Total vouchers																																	</td>
-										<td colspan="2" class="price-discount price" id="total_discount">
-																																				$0.00
-																																	</td>
-									</tr>
-																													<tr class="cart_total_price">
+						<div class="paiement_block">
+							<div id="HOOK_TOP_PAYMENT"></div>
+							<div id="order-detail-content"
+								class="table_block table-responsive">
+								<table id="cart_summary" class="table table-bordered">
+									<thead>
+										<tr>
+											<th class="cart_product first_item">Product</th>
+											<th class="cart_description item">Description</th>
+											<th class="cart_availability item text-center">Availability</th>
+											<th class="cart_unit item text-right">Unit price</th>
+											<th class="cart_quantity item text-center">Qty</th>
+											<th class="cart_total last_item text-right">Total</th>
+										</tr>
+									</thead>
+									<tfoot>
+										<script src="scripts/logic/end_user/agileShoppingCart.js"></script>
+										<tr class="cart_total_price">
+											<td colspan="4" class="text-right">Total products</td>
+											<td colspan="2" class="price" id="total_product">{{cart.getTotalPrice()
+												| currency}}</td>
+										</tr>
+										<tr class="cart_total_voucher" style="display: none">
+											<td colspan="4" class="text-right">Total gift wrapping
+												cost:</td>
+											<td colspan="2" class="price-discount price"
+												id="total_wrapping">$0.00</td>
+										</tr>
+										<tr class="cart_total_delivery">
+											<td colspan="4" class="text-right">Total shipping</td>
+											<td colspan="2" class="price" id="total_shipping">$7.00</td>
+										</tr>
+										<tr class="cart_total_voucher" style="display: none">
+											<td colspan="4" class="text-right">Total vouchers</td>
+											<td colspan="2" class="price-discount price"
+												id="total_discount">$0.00</td>
+										</tr>
+										<tr class="cart_total_price">
 											<td colspan="4" class="total_price_container text-right"><span>Total</span></td>
 											<td colspan="2" class="price" id="total_price_container">
-												<span id="total_price" data-selenium-total-price="108.99">$108.99</span>
+												<span id="total_price" data-selenium-total-price="108.99">{{cart.getTotalPrice()+
+													7 | currency}}</span>
 											</td>
 										</tr>
-																	</tfoot>
+									</tfoot>
 
-								<tbody>
-																																																																					
-										
-										<tr id="product_4_16_0_609" class="cart_item address_609 odd">
-	<td class="cart_product">
-		<a href="http://fo.demo.prestashop.com/en/evening-dresses/4-printed-dress.html#/size-s/color-beige"><img src="http://fo.demo.prestashop.com/10-small_default/printed-dress.jpg" alt="Printed Dress" width="98" height="98"></a>
-	</td>
-	<td class="cart_description">
-						<p class="product-name"><a href="http://fo.demo.prestashop.com/en/evening-dresses/4-printed-dress.html#/size-s/color-beige">Printed Dress</a></p>
-			<small class="cart_ref">SKU : demo_4</small>		<small><a href="http://fo.demo.prestashop.com/en/evening-dresses/4-printed-dress.html#/size-s/color-beige">Size : S, Color : Beige</a></small>	</td>
-			<td class="cart_avail"><span class="label label-success">In stock</span></td>
-		<td class="cart_unit" data-title="Unit price">
-		<ul class="price text-right" id="product_price_4_16_609">
-			            	               	 	<li class="price">$50.99</li>
-													</ul>
-	</td>
+									<tbody>
+										<tr id="product_3_13_0_0"
+											ng-repeat="item in cart.items | orderBy:'prodName'"
+											class="cart_item last_item first_item address_0 odd">
+											<td class="cart_product"><a href="#"><img
+													src="{{item.prodImgUrl}}" alt="Printed Dress" width="98"
+													height="98" /></a></td>
+											<td class="cart_description">
+												<p class="product-name">
+													<a href="#">{{item.prodName}}</a>
+												</p>
+											</td>
+											<td class="cart_avail"><span class="label label-success">In
+													stock</span></td>
+											<td class="cart_unit" data-title="Unit price">
+												<ul class="price text-right" id="product_price_3_13_0">
+													<li class="price">{{item.prodPrice | currency}}</li>
+												</ul>
+											</td>
+											<td class="cart_quantity text-center" data-title="Unit price">
+												<ul class="cart_quantity text-center" id="quantity_3_13_0">
+													<li class="cart_quantity text-center">{{item.prodQuantity}}</li>
+												</ul>
+											</td>
+											<td class="cart_total" data-title="Total"><span
+												class="price" id="total_product_price_3_13_0">
+													{{item.prodPrice | currency}} </span></td>
 
-	<td class="cart_quantity text-center">
-					<span>
-									2
-							</span>
-			</td>
-		<td class="cart_total" data-title="Total">
-		<span class="price" id="total_product_price_4_16_609">
-												$101.99									</span>
-	</td>
+										</tr>
+									</tbody>
 
-</tr>
+								</table>
+							</div>
+							<!-- end order-detail-content -->
+							<div id="HOOK_PAYMENT">
+								<div class="row">
+									<div class="col-xs-12">
+										<p class="payment_module">
+											<a class="bankwire" href="#" title="Pay by bank wire">
+												Pay by bank wire <span>(order processing will be
+													longer)</span>
+											</a>
+										</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-12">
+										<p class="payment_module">
+											<a class="cheque" href="#" title="Pay by check."> Pay by
+												check <span>(order processing will be longer)</span>
+											</a>
+										</p>
+									</div>
+								</div>
 
-
-										
-																																													</tbody>
-
-															</table>
-						</div> <!-- end order-detail-content -->
-															<div id="HOOK_PAYMENT">
-						<div class="row">
-	<div class="col-xs-12">
-		<p class="payment_module">
-			<a class="bankwire" href="#" title="Pay by bank wire">
-				Pay by bank wire <span>(order processing will be longer)</span>
-			</a>
-		</p>
-	</div>
-</div>
-<div class="row">
-	<div class="col-xs-12">
-        <p class="payment_module">
-            <a class="cheque" href="#" title="Pay by check.">
-                Pay by check <span>(order processing will be longer)</span>
-            </a>
-        </p>
-    </div>
-</div>
-
+							</div>
+							<p class="cart_navigation clearfix">
+								<a href="#"
+									title="Previous" class="button-exclusive btn btn-default">
+									<i class="icon-chevron-left"></i> Continue shopping
+								</a>
+							</p>
+						</div>
+						<!-- end HOOK_TOP_PAYMENT -->
 					</div>
-																		<p class="cart_navigation clearfix">
-						<a href="http://fo.demo.prestashop.com/en/order?step=2" title="Previous" class="button-exclusive btn btn-default">
-							<i class="icon-chevron-left"></i>
-							Continue shopping
-						</a>
-					</p>
-							</div> <!-- end HOOK_TOP_PAYMENT -->
-					</div><!-- #center_column -->
-										</div><!-- .row -->
-				</div><!-- #columns -->
-			</div><!-- .columns-container -->
-							<!-- Footer -->
-				<div class="footer-container">
-					<footer id="footer"  class="container">
-						<div class="row"><!-- Block Newsletter module-->
-<div id="newsletter_block_left" class="block">
-	<h4>Newsletter</h4>
-	<div class="block_content">
-		<form action="/fo.demo.prestashop.com/en/" method="post">
-			<div class="form-group" >
-				<input class="inputNew form-control grey newsletter-input" id="newsletter-input" type="text" name="email" size="18" value="Enter your e-mail">
-                <button type="submit" name="submitNewsletter" class="btn btn-default button button-small">
-                    <span>Ok</span>
-                </button>
-				<input type="hidden" name="action" value="0">
+					<!-- #center_column -->
+				</div>
+				<!-- .row -->
 			</div>
-		</form>
-	</div>
-</div>
-<!-- /Block Newsletter module-->
-<section id="social_block" class="pull-right">
-	<ul>
-					<li class="facebook">
-				<a class="_blank" href="http://www.facebook.com/prestashop">
-					<span>Facebook</span>
-				</a>
-			</li>
-							<li class="twitter">
-				<a class="_blank" href="http://www.twitter.com/prestashop">
-					<span>Twitter</span>
-				</a>
-			</li>
-							<li class="rss">
-				<a class="_blank" href="http://www.prestashop.com/blog/en/">
-					<span>RSS</span>
-				</a>
-			</li>
-		                        	<li class="google-plus">
-        		<a class="_blank" href="https://www.google.com/+prestashop">
-        			<span>Google Plus</span>
-        		</a>
-        	</li>
-                                	</ul>
-    <h4>Follow us</h4>
-</section>
-<div class="clearfix"></div>
-<!-- Block categories module -->
-<section class="blockcategories_footer footer-block col-xs-12 col-sm-2">
-	<h4>Categories</h4>
-	<div class="category_footer toggle-footer">
-		<div class="list">
-			<ul class="tree dhtml">
-												
-<li class="last">
-	<a 
-	href="http://fo.demo.prestashop.com/en/3-women" title="You will find here all woman fashion collections.  
- This category includes all the basics of your wardrobe and much more: 
- shoes, accessories, printed t-shirts, feminine dresses, women&#039;s jeans!">
-		Women
-	</a>
-			<ul>
-												
-<li >
-	<a 
-	href="http://fo.demo.prestashop.com/en/4-tops" title="Choose from t-shirts, tops, blouses, short sleeves, long sleeves, tank tops, 3/4 sleeves and more. 
- Find the cut that suits you the best!">
-		Tops
-	</a>
-			<ul>
-												
-<li >
-	<a 
-	href="http://fo.demo.prestashop.com/en/5-tshirts" title="The must have of your wardrobe, take a look at our different colors, 
- shapes and style of our collection!">
-		T-shirts
-	</a>
-	</li>
-
-																
-<li class="last">
-	<a 
-	href="http://fo.demo.prestashop.com/en/7-blouses" title="Match your favorites blouses with the right accessories for the perfect look.">
-		Blouses
-	</a>
-	</li>
-
-									</ul>
-	</li>
-
-																
-<li class="last">
-	<a 
-	href="http://fo.demo.prestashop.com/en/8-dresses" title="Find your favorites dresses from our wide choice of evening, casual or summer dresses! 
- We offer dresses for every day, every style and every occasion.">
-		Dresses
-	</a>
-			<ul>
-												
-<li >
-	<a 
-	href="http://fo.demo.prestashop.com/en/9-casual-dresses" title="You are looking for a dress for every day? Take a look at 
- our selection of dresses to find one that suits you.">
-		Casual Dresses
-	</a>
-	</li>
-
-																
-<li >
-	<a 
-	href="http://fo.demo.prestashop.com/en/10-evening-dresses" title="Browse our different dresses to choose the perfect dress for an unforgettable evening!">
-		Evening Dresses
-	</a>
-	</li>
-
-																
-<li class="last">
-	<a 
-	href="http://fo.demo.prestashop.com/en/11-summer-dresses" title="Short dress, long dress, silk dress, printed dress, you will find the perfect dress for summer.">
-		Summer Dresses
-	</a>
-	</li>
-
-									</ul>
-	</li>
-
-									</ul>
-	</li>
-
-							
-										</ul>
+			<!-- #columns -->
 		</div>
-	</div> <!-- .category_footer -->
-</section>
-<!-- /Block categories module -->
-	<!-- MODULE Block footer -->
-	<section class="footer-block col-xs-12 col-sm-2" id="block_various_links_footer">
-		<h4>Information</h4>
-		<ul class="toggle-footer">
-							<li class="item">
-					<a href="http://fo.demo.prestashop.com/en/prices-drop" title="Specials">
-						Specials
-					</a>
-				</li>
-									<li class="item">
-				<a href="http://fo.demo.prestashop.com/en/new-products" title="New products">
-					New products
-				</a>
-			</li>
-										<li class="item">
-					<a href="http://fo.demo.prestashop.com/en/best-sales" title="Best sellers">
-						Best sellers
-					</a>
-				</li>
-										<li class="item">
-					<a href="http://fo.demo.prestashop.com/en/stores" title="Our stores">
-						Our stores
-					</a>
-				</li>
-									<li class="item">
-				<a href="http://fo.demo.prestashop.com/en/contact-us" title="Contact us">
-					Contact us
-				</a>
-			</li>
-															<li class="item">
-						<a href="http://fo.demo.prestashop.com/en/content/3-terms-and-conditions-of-use" title="Terms and conditions of use">
-							Terms and conditions of use
-						</a>
-					</li>
-																<li class="item">
-						<a href="http://fo.demo.prestashop.com/en/content/4-about-us" title="About us">
-							About us
-						</a>
-					</li>
-													<li>
-				<a href="http://fo.demo.prestashop.com/en/sitemap" title="Sitemap">
-					Sitemap
-				</a>
-			</li>
-					</ul>
-		
-	</section>
-		<section class="bottom-footer col-xs-12">
-		<div>
-			&copy; 2014 <a class="_blank" href="http://www.prestashop.com">Ecommerce software by PrestaShop™</a>
-		</div>
-	</section>
-		<!-- /MODULE Block footer -->
-<!-- Block myaccount module -->
-<section class="footer-block col-xs-12 col-sm-4">
-	<h4><a href="http://fo.demo.prestashop.com/en/my-account" title="Manage my customer account" rel="nofollow">My account</a></h4>
-	<div class="block_content toggle-footer">
-		<ul class="bullet">
-			<li><a href="http://fo.demo.prestashop.com/en/order-history" title="My orders" rel="nofollow">My orders</a></li>
-						<li><a href="http://fo.demo.prestashop.com/en/credit-slip" title="My credit slips" rel="nofollow">My credit slips</a></li>
-			<li><a href="http://fo.demo.prestashop.com/en/addresses" title="My addresses" rel="nofollow">My addresses</a></li>
-			<li><a href="http://fo.demo.prestashop.com/en/identity" title="Manage my personal information" rel="nofollow">My personal info</a></li>
-						
-            <li><a href="http://fo.demo.prestashop.com/en/?mylogout" title="Sign out" rel="nofollow">Sign out</a></li>		</ul>
-	</div>
-</section>
-<!-- /Block myaccount module -->
-<!-- MODULE Block contact infos -->
-<section id="block_contact_infos" class="footer-block col-xs-12 col-sm-4">
-	<div>
-        <h4>Store Information</h4>
-        <ul class="toggle-footer">
-                        	<li>
-            		<i class="icon-map-marker"></i>My Company, 42 avenue des Champs Elysées
-75000 Paris
-France            	</li>
-                                    	<li>
-            		<i class="icon-phone"></i>Call us now: 
-            		<span>0123-456-789</span>
-            	</li>
-                                    	<li>
-            		<i class="icon-envelope-alt"></i>Email: 
-            		<span><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%73%61%6c%65%73@%79%6f%75%72%63%6f%6d%70%61%6e%79.%63%6f%6d" >&#x73;&#x61;&#x6c;&#x65;&#x73;&#x40;&#x79;&#x6f;&#x75;&#x72;&#x63;&#x6f;&#x6d;&#x70;&#x61;&#x6e;&#x79;&#x2e;&#x63;&#x6f;&#x6d;</a></span>
-            	</li>
-                    </ul>
-    </div>
-</section>
-<!-- /MODULE Block contact infos -->
-</div>
-					</footer>
-				</div><!-- #footer -->
-					</div><!-- #page -->
-</body></html>
+		<!-- .columns-container -->
+</body>
+</html>
