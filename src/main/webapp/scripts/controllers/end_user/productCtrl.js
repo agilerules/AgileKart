@@ -17,6 +17,7 @@ angular.module('enduser').controller('productCtrl',function($scope,$http,$routeP
 	 $scope.cart = DataService.cart;
 	 
 	 var products=[];
+	 var productUp=[];
 	 $scope.productRest=AkProductsResource.queryAll();
 	 $scope.productOptionsRest=AkProductOptionsResource.queryAll();
 	 $scope.productRest.$promise.then(function(dataProduct){
@@ -40,9 +41,15 @@ angular.module('enduser').controller('productCtrl',function($scope,$http,$routeP
 				console.log("ProductOptionId "+postObject.optionId);
 				 console.log("OptionGroupId "+postObject.optionGroupId);
 				 $http.post("/AgileKartService/agilekart", postObject).success(function(brms){
+					 console.log("HI");
 					   $scope.bramscategory=brms.crosellProduct.categoryId;
 					   $scope.bramsoption=brms.crosellProduct.optionId;
 					   $scope.bramsgroupid=brms.crosellProduct.optionGroupId;
+					   $scope.bramsupgroupid1=brms.upsellProduct.optionGroupId1;
+					   $scope.bramsupgroupid2=brms.upsellProduct.optionGroupId2;
+					   console.log("categoryId "+brms.crosellProduct.categoryId);
+					   console.log("optionId "+brms.crosellProduct.optionId);
+					   console.log("OptionGroupId "+brms.crosellProduct.optionGroupId);
 					   products=[];
 					   for(var i=0;i<dataProductOptions.length;i++){
 						   if(brms.crosellProduct.optionId==dataProductOptions[i].akOptions.optionId
@@ -56,7 +63,22 @@ angular.module('enduser').controller('productCtrl',function($scope,$http,$routeP
 					   for(var i=0;i<products.length;i++){
 						   console.log(products[i].productCartDesc);
 					   }
-					});
+					   productUp=[];
+					   for(var i=0;i<dataProductOptions.length;i++){
+						   if(dataProductOptions[i].akOptionGroups.optionGroupId==brms.upsellProduct.optionGroupId1
+								   ||dataProductOptions[i].akOptionGroups.optionGroupId.categoryId==brms.upsellProduct.optionGroupId2){
+								   
+								   productUp.push(dataProductOptions[i].akProducts);
+					   }
+					   }
+					   
+					   $scope.productsUpList=productUp;
+					   console.log("check"+productUp);
+					   
+					}).
+					  error(function() {
+						    console.log("error");
+						  });
 		 });
 	 });
 	 

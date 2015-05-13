@@ -235,57 +235,12 @@
 							<table>
 								<tr>
 									<div class="content_price" ng-switch on="product().productId ">
-										<div ng-switch-when=1>
-											<a href="#"><img src="img/1-home_default/Jakes_polo.jpg"></img></a>
-											<a href="#"><img
-												src="img/1-home_default/Light_Cotton_TShirt_3.jpg"></img></a>
+										<div >
+											<span ng-repeat="productup in productsUpList">
+										<a href="#/product/{{productup.akProductCategories.categoryName}}/{{productup.productId}}" ><img
+											src="{{productup.productThumb}}"></img></a> 
+										</span>	
 										</div>
-										<div ng-switch-when=3>
-											<a href="#"><img
-												src="img/1-home_default/Light_Cotton_TShirt.jpg"></img></a> <a
-												href="#"><img
-												src="img/1-home_default/Light_Cotton_TShirt_3.jpg"></img></a>
-										</div>
-										<div ng-switch-when=8>
-											<a href="#"><img src="img/1-home_default/Jakes_polo.jpg"></img></a>
-											<a href="#"><img
-												src="img/1-home_default/Light_Cotton_TShirt.jpg"></img></a>
-										</div>
-										<div ng-switch-when=2>
-											<a href="#"><img
-												src="img/1-home_default/APK_Spring Tee_2.jpg"></img></a>
-										</div>
-										<div ng-switch-when=7>
-											<a href="#"><img
-												src="img/1-home_default/APK_Spring Tee.jpg"></img></a>
-										</div>
-										<div ng-switch-when=5>
-											<a href="#"><img
-												src="img/2-home_default/Womens_Kalitron_sport.jpg"></img></a> <a
-												href="#"><img
-												src="img/2-home_default/Watchworld_womens_Classic_2.jpg"></img></a>
-										</div>
-										<div ng-switch-when=6>
-											<a href="#"><img
-												src="img/2-home_default/Watchworld_womens_Classic.jpg"></img></a>
-											<a href="#"><img
-												src="img/2-home_default/Watchworld_womens_Classic_2.jpg"></img></a>
-										</div>
-										<div ng-switch-when=10>
-											<a href="#"><img
-												src="img/2-home_default/Womens_Kalitron_sport.jpg"></img></a> <a
-												href="#"><img
-												src="img/2-home_default/Watchworld_womens_Classic.jpg"></img></a>
-										</div>
-										<div ng-switch-when=4>
-											<a href="#"><img
-												src="img/2-home_default/Watchworld_Mens_Classic_3.jpg"></img></a>
-										</div>
-										<div ng-switch-when=9>
-											<a href="#"><img
-												src="img/2-home_default/Watchworld_Mens_Classic.jpg"></img></a>
-										</div>
-
 									</div>
 								</tr>
 							</table>
