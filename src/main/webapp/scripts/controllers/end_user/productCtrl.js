@@ -71,8 +71,24 @@ angular.module('enduser').controller('productCtrl',function($scope,$http,$routeP
 								   productUp.push(dataProductOptions[i].akProducts);
 					   }
 					   }
-					   
-					   $scope.productsUpList=productUp;
+					   function remove_duplicates(objectsArray) {
+						    var usedObjects = {};
+
+						    for (var i=objectsArray.length - 1;i>=0;i--) {
+						        var so = JSON.stringify(objectsArray[i]);
+
+						        if (usedObjects[so]) {
+						            objectsArray.splice(i, 1);
+
+						        } else {
+						            usedObjects[so] = true;          
+						        }
+						    }
+
+						    return objectsArray;
+
+						}
+					   $scope.productsUpList=remove_duplicates(productUp);;
 					   console.log("check"+productUp);
 					   
 					}).
