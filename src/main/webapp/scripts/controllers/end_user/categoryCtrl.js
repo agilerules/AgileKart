@@ -9,15 +9,16 @@ angular.module('enduser').controller('CategoryCtrl',function($scope,$http,$timeo
 			var productsIds=[];
 			var products=[];
 			var a=0;
+			var check=0;
 			$scope.routeCategory=$routeParams.categoryValue;
 			var routeCatValue=$scope.routeCategory;
 				$scope.optionsGroupsList=AkOptionGroupsResource.queryAll();
 				$scope.optionsLists=AkOptionsResource.queryAll();
 				$scope.productOptions=AkProductOptionsResource.queryAll();
 				$scope.productsList=AkProductsResource.queryAll();
-				opslocal=$scope.optionsLists;
-				proList=$scope.productsList;
-				proOptions=$scope.productOptions;
+				$scope.optionsLists.$promise.then(function(opslocal){
+				$scope.productsList.$promise.then(function(proList){
+				$scope.productOptions.$promise.then(function(proOptions){
 				
 			$scope.optionsList=function(groupId){
 				options=[];
@@ -34,6 +35,12 @@ angular.module('enduser').controller('CategoryCtrl',function($scope,$http,$timeo
 			});
 			
 			$scope.productIdList=function(groupId,optionId,flag){
+				check++;
+				if(check==1){
+					productsIds.splice(0,productsIds.length)
+					console.log("The products ids are productIdList : "+productsIds);
+					console.log("Check value is equal to one : "+ check);
+				}
 				console.log("The group id, option id and flag details are"+groupId+" "+optionId+" "+flag);
 				console.log("flag vlaue is "+$scope.flag+proOptions.length+"     "+productsIds.length);
 				if(flag){
@@ -58,8 +65,20 @@ angular.module('enduser').controller('CategoryCtrl',function($scope,$http,$timeo
 				return  productsIds;
 			};
 			$scope.productList=function(){
+				if(check<1){
+					for(var i=0;i<proList.length;i++){
+						productsIds.push(proList[i].productId);
+					}
+					console.log("Check value is checked for one : "+ check);
+					console.log("The products ids are : "+productsIds);
+				}
+				if(check>=1){
+					products=[];
+					console.log("Check value is checked for more than one : "+ check);
+				}
 				
-				products=[];
+				console.log("Check value is checked: "+ check);
+				
 				for(var i=0;i<productsIds.length;i++){
 					for(var j=0;j<proList.length;j++){
 						if(proList[j].akProductCategories.categoryName==routeCatValue){
@@ -87,5 +106,8 @@ angular.module('enduser').controller('CategoryCtrl',function($scope,$http,$timeo
 					
 				return products;
 			};
+				});
+				});
+				});
 			 $scope.cart = DataService.cart;
 		});

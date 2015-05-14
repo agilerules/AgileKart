@@ -109,11 +109,12 @@
 					<!-- /nbr product/page -->
 
 				</div>
-				<div class="top-pagination-content clearfix">
+				<div class="top-pagination-content clearfix" ng-switch on="noOfProducts>0">
 
 					<!-- Pagination -->
-					<div id="pagination" class="pagination clearfix"></div>
-					<div class="product-count">Showing 1 - {{noOfProducts}} of {{noOfProducts}} items</div>
+					<div id="pagination" class="pagination clearfix" ></div>
+					<div class="product-count" ng-switch-when='false'>No items found</div>
+					<div class="product-count" ng-switch-when='true'>Showing 1 - {{noOfProducts}} of {{noOfProducts}} items</div>
 					<!-- /Pagination -->
 
 				</div>
@@ -182,13 +183,14 @@
 
 
 			<div class="content_sortPagiBar">
-				<div class="bottom-pagination-content clearfix">
+				<div class="bottom-pagination-content clearfix" ng-switch on="noOfProducts>0">
 
 
 
 					<!-- Pagination -->
 					<div id="pagination_bottom" class="pagination clearfix"></div>
-					<div class="product-count">Showing 1 - {{noOfProducts}} of {{noOfProducts}} items</div>
+					<div class="product-count" ng-switch-when='false'>No items found</div>
+					<div class="product-count" ng-switch-when='true'>Showing 1 - {{noOfProducts}} of {{noOfProducts}} items</div>
 					<!-- /Pagination -->
 
 				</div>
