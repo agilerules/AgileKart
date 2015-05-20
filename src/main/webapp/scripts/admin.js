@@ -4,6 +4,9 @@ angular.module('agileRulesKart',['ngRoute','ngResource'])
   .config(['$routeProvider', function($routeProvider) {
     $routeProvider
       .when('/',{templateUrl:'views/admin/landing.html',controller:'LandingPageController'})
+      .when('/AkCategoryOptions',{templateUrl:'views/admin/AkCategoryOptions/search.html',controller:'SearchAkCategoryOptionsController'})
+      .when('/AkCategoryOptions/new',{templateUrl:'views/admin/AkCategoryOptions/detail.html',controller:'NewAkCategoryOptionsController'})
+      .when('/AkCategoryOptions/edit/:AkCategoryOptionsId',{templateUrl:'views/admin/AkCategoryOptions/detail.html',controller:'EditAkCategoryOptionsController'})
       .when('/AkOptionGroups',{templateUrl:'views/admin/AkOptionGroups/search.html',controller:'SearchAkOptionGroupsController'})
       .when('/AkOptionGroups/new',{templateUrl:'views/admin/AkOptionGroups/detail.html',controller:'NewAkOptionGroupsController'})
       .when('/AkOptionGroups/edit/:AkOptionGroupsId',{templateUrl:'views/admin/AkOptionGroups/detail.html',controller:'EditAkOptionGroupsController'})

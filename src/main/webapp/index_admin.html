@@ -34,6 +34,7 @@
                     </a>
                     <nav class="sidebar-nav" ng-controller="NavController" role="navigation">
                         <div id="sidebar-entries" class="list-group">
+  							<a class="list-group-item" ng-class="{active: matchesRoute('AkCategoryOptions')}" href="#/AkCategoryOptions" data-toggle="offcanvas">AkCategoryOptions</a>
                         	<a class="list-group-item" ng-class="{active: matchesRoute('AkOptionGroups')}" href="#/AkOptionGroups" data-toggle="offcanvas">AkOptionGroups</a>
                         	<a class="list-group-item" ng-class="{active: matchesRoute('AkOptions')}" href="#/AkOptions" data-toggle="offcanvas">AkOptions</a>
                         	<a class="list-group-item" ng-class="{active: matchesRoute('AkOrderDetails')}" href="#/AkOrderDetails" data-toggle="offcanvas">AkOrderDetails</a>
@@ -75,6 +76,10 @@
     <script src="scripts/filters/admin/startFromFilter.js"></script>
     <script src="scripts/filters/admin/genericSearchFilter.js"></script>
     <script src="scripts/services/admin/locationParser.js"></script>
+    <script src="scripts/services/admin/AkCategoryOptionsFactory.js"></script>
+    <script src="scripts/controllers/admin/newAkCategoryOptionsController.js"></script>
+    <script src="scripts/controllers/admin/searchAkCategoryOptionsController.js"></script>
+    <script src="scripts/controllers/admin/editAkCategoryOptionsController.js"></script>
     <script src="scripts/services/admin/AkOptionGroupsFactory.js"></script>
     <script src="scripts/controllers/admin/newAkOptionGroupsController.js"></script>
     <script src="scripts/controllers/admin/searchAkOptionGroupsController.js"></script>
