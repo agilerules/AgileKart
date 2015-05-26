@@ -18,6 +18,35 @@ USE `agilekart`;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
+-- Table structure for table `ak_category_options`
+--
+
+DROP TABLE IF EXISTS `ak_category_options`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ak_category_options` (
+  `category_option_id` int(11) NOT NULL,
+  `category_id` int(11) NOT NULL,
+  `option_group_id` int(11) NOT NULL,
+  PRIMARY KEY (`category_option_id`),
+  KEY `fk_category_id1` (`category_id`),
+  KEY `fk_option_group_id1` (`option_group_id`),
+  CONSTRAINT `fk_category_id1` FOREIGN KEY (`category_id`) REFERENCES `ak_product_categories` (`category_id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `fk_option_group_id1` FOREIGN KEY (`option_group_id`) REFERENCES `ak_option_groups` (`option_group_id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ak_category_options`
+--
+
+LOCK TABLES `ak_category_options` WRITE;
+/*!40000 ALTER TABLE `ak_category_options` DISABLE KEYS */;
+INSERT INTO `ak_category_options` VALUES (1,1,1),(2,1,2),(3,1,3),(4,2,3),(5,2,4),(6,3,3),(7,3,5);
+/*!40000 ALTER TABLE `ak_category_options` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `ak_option_groups`
 --
 
@@ -292,4 +321,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-05-17 23:27:03
+-- Dump completed on 2015-05-26 19:40:31
